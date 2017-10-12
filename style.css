@@ -1,4 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: "Arvo", serif;
+	color: #F7F5E3;
+}
+#mainPanel {
+	background-color: #161514;
+	width: calc(100% - 400px);
+	height: 100%;
+	float: right;
+	padding: 15px;
+}
+#sidePanel {
+	background-color: #1C1A19;
+	width: 400px;
+	height: 100%;
+	float: left;
+	padding: 15px;
+}
+.item {
+	background-image: url(sprites/artifacts_base.png);
+	width: 48px;
+	height: 58px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
 }
