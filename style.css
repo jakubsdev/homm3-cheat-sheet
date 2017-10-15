@@ -35,3 +35,13 @@ body {
 	margin-right: 5px;
 	list-style-type: none;
 }
+#itemStats li {
+	list-style-type: none;
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+#sidePanel p {
+	clear: both;
+	margin-top: 40px;
+}
