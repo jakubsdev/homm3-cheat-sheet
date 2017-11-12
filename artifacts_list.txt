@@ -1,0 +1,56 @@
+[
+	{
+		"Name": "Centaur's Axe",
+		"Rarity": "Treasure",
+		"Attack": 2,
+		"Defense": 0,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "This right handed weapon increases your Attack skill by +2."
+	},
+	{
+		"Name": "Blackshard of the Dead Knight",
+		"Rarity": "Minor",
+		"Attack": 3,
+		"Defense": 0,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "This right handed weapon increases your Attack skill by +3."
+	},
+	{
+		"Name": "Greater Gnoll's Flail",
+		"Rarity": "Minor",
+		"Attack": 4,
+		"Defense": 0,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "This right handed weapon increases your Attack skill by +4."
+	},
+	{
+		"Name": "Ogre's Club of Havoc",
+		"Rarity": "Major",
+		"Attack": 5,
+		"Defense": 0,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "This right handed weapon increases your Attack skill by +5."
+	},
+	{
+		"Name": "Sword of Hellfire",
+		"Rarity": "Major",
+		"Attack": 6,
+		"Defense": 0,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "This right handed weapon increases your Attack skill by +6."
+	},
+	{
+		"Name": "Titan's Gladius",
+		"Rarity": "Relic",
+		"Attack": 12,
+		"Defense": -3,
+		"Power": 0,
+		"Knowledge": 0,
+		"Description": "Held with the right hand, this massive relic increases your Attack skill by +12, but reduces your Defense skill by -3."
+	}
+]
