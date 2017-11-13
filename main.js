@@ -2,6 +2,9 @@ artifactsGrid = document.getElementById("artifactsGrid");
 
 searchBar = document.getElementById("searchBar");
 
+selRarity = document.getElementById("selRarity");
+selRarity.addEventListener("change", search);
+
 
 iName = document.getElementById("itemName");
 iRarity = document.getElementById("itemRarity");
@@ -40,6 +43,15 @@ function search(){
 		} 
 		else {
 			document.getElementById(j).style.display = "none";
+		}
+		
+		switch(selRarity.value){
+			case "minor":
+				if(items[j].Rarity != "Minor"){
+					document.getElementById(j).style.display = "none";
+				}
+			default:
+				break;
 		}
 	}
 }
