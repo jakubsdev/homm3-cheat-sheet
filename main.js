@@ -45,13 +45,8 @@ function search(){
 			document.getElementById(j).style.display = "none";
 		}
 		
-		switch(selRarity.value){
-			case "minor":
-				if(items[j].Rarity != "Minor"){
-					document.getElementById(j).style.display = "none";
-				}
-			default:
-				break;
+		if(selRarity.value != "Default" && selRarity.value != items[j].Rarity){
+			document.getElementById(j).style.display = "none";
 		}
 	}
 }
