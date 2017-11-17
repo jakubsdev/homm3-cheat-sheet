@@ -1,56 +1,642 @@
 [
 	{
 		"Name": "Centaur's Axe",
+		"Type": "Weapon",
 		"Rarity": "Treasure",
-		"Attack": 2,
-		"Defense": 0,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "This right handed weapon increases your Attack skill by +2."
+		"Attack": "2",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
 	},
 	{
 		"Name": "Blackshard of the Dead Knight",
+		"Type": "Weapon",
 		"Rarity": "Minor",
-		"Attack": 3,
-		"Defense": 0,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "This right handed weapon increases your Attack skill by +3."
+		"Attack": "3",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
 	},
 	{
 		"Name": "Greater Gnoll's Flail",
+		"Type": "Weapon",
 		"Rarity": "Minor",
-		"Attack": 4,
-		"Defense": 0,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "This right handed weapon increases your Attack skill by +4."
+		"Attack": "4",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
 	},
 	{
 		"Name": "Ogre's Club of Havoc",
+		"Type": "Weapon",
 		"Rarity": "Major",
-		"Attack": 5,
-		"Defense": 0,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "This right handed weapon increases your Attack skill by +5."
+		"Attack": "5",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
 	},
 	{
 		"Name": "Sword of Hellfire",
+		"Type": "Weapon",
 		"Rarity": "Major",
-		"Attack": 6,
-		"Defense": 0,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "This right handed weapon increases your Attack skill by +6."
+		"Attack": "6",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
 	},
 	{
 		"Name": "Titan's Gladius",
+		"Type": "Weapon",
 		"Rarity": "Relic",
-		"Attack": 12,
-		"Defense": -3,
-		"Power": 0,
-		"Knowledge": 0,
-		"Description": "Held with the right hand, this massive relic increases your Attack skill by +12, but reduces your Defense skill by -3."
+		"Attack": "12",
+		"Defense": "-3",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Shield of the Dwarven Lords",
+		"Type": "Shield",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "2",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Shield of the Yawning Dead",
+		"Type": "Shield",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "3",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Buckler of the Gnoll King",
+		"Type": "Shield",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "4",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Targ of the Rampaging Ogre",
+		"Type": "Shield",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "5",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Shield of the Damned",
+		"Type": "Shield",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "6",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Sentinel's Shield",
+		"Type": "Shield",
+		"Rarity": "Relic",
+		"Attack": "-3",
+		"Defense": "12",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Helm of the Alabaster Unicorn",
+		"Type": "Helm",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "1",
+		"Effect": ""
+	},
+	{
+		"Name": "Skull Helmet",
+		"Type": "Helm",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "2",
+		"Effect": ""
+	},
+	{
+		"Name": "Helm of Chaos",
+		"Type": "Helm",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "3",
+		"Effect": ""
+	},
+	{
+		"Name": "Crown of the Supreme Magi",
+		"Type": "Helm",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "4",
+		"Effect": ""
+	},
+	{
+		"Name": "Hellstorm Helmet",
+		"Type": "Helm",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "5",
+		"Effect": ""
+	},
+	{
+		"Name": "Thunder Helmet",
+		"Type": "Helm",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "-2",
+		"Knowledge": "10",
+		"Effect": ""
+	},
+	{
+		"Name": "Breastplate of Petrified Wood",
+		"Type": "Armor",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "1",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Rib Cage",
+		"Type": "Armor",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "2",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Scales of the Greater Basilisk",
+		"Type": "Armor",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "3",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Tunic of the Cyclops King",
+		"Type": "Armor",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "4",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Breastplate of Brimstone",
+		"Type": "Armor",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "5",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Titan's Cuirass",
+		"Type": "Armor",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "10",
+		"Knowledge": "-2",
+		"Effect": ""
+	},
+	{
+		"Name": "Armor of Wonder",
+		"Type": "Armor",
+		"Rarity": "Minor",
+		"Attack": "1",
+		"Defense": "1",
+		"Power": "1",
+		"Knowledge": "1",
+		"Effect": ""
+	},
+	{
+		"Name": "Sandals of the Saint",
+		"Type": "Boots",
+		"Rarity": "Relic",
+		"Attack": "2",
+		"Defense": "2",
+		"Power": "2",
+		"Knowledge": "2",
+		"Effect": ""
+	},
+	{
+		"Name": "Celestial Necklace of Bliss",
+		"Type": "Necklace",
+		"Rarity": "Relic",
+		"Attack": "3",
+		"Defense": "3",
+		"Power": "3",
+		"Knowledge": "3",
+		"Effect": ""
+	},
+	{
+		"Name": "Lion's Shield of Courage",
+		"Type": "Shield",
+		"Rarity": "Relic",
+		"Attack": "4",
+		"Defense": "4",
+		"Power": "4",
+		"Knowledge": "4",
+		"Effect": ""
+	},
+	{
+		"Name": "Sword of Judgement",
+		"Type": "Weapon",
+		"Rarity": "Relic",
+		"Attack": "5",
+		"Defense": "5",
+		"Power": "5",
+		"Knowledge": "5",
+		"Effect": ""
+	},
+	{
+		"Name": "Helm of Heavenly Enlightenment",
+		"Type": "Helm",
+		"Rarity": "Relic",
+		"Attack": "6",
+		"Defense": "6",
+		"Power": "6",
+		"Knowledge": "6",
+		"Effect": ""
+	},
+	{
+		"Name": "Quiet Eye of the Dragon",
+		"Type": "Ring",
+		"Rarity": "Treasure",
+		"Attack": "1",
+		"Defense": "1",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Red Dragon Flame Tongue",
+		"Type": "Weapon",
+		"Rarity": "Minor",
+		"Attack": "2",
+		"Defense": "2",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Dragon Scale Shield",
+		"Type": "Shield",
+		"Rarity": "Major",
+		"Attack": "3",
+		"Defense": "3",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Dragon Scale Armor",
+		"Type": "Armor",
+		"Rarity": "Relic",
+		"Attack": "4",
+		"Defense": "4",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": ""
+	},
+	{
+		"Name": "Dragonbone Greaves",
+		"Type": "Boots",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "1",
+		"Knowledge": "1",
+		"Effect": ""
+	},
+	{
+		"Name": "Dragon Wing Tabard",
+		"Type": "Cape",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "2",
+		"Knowledge": "2",
+		"Effect": ""
+	},
+	{
+		"Name": "Necklace of Dragonteeth",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "3",
+		"Knowledge": "3",
+		"Effect": ""
+	},
+	{
+		"Name": "Crown of Dragontooth",
+		"Type": "Helm",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "4",
+		"Knowledge": "4",
+		"Effect": ""
+	},
+	{
+		"Name": "Still Eye of the Dragon",
+		"Type": "Ring",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the finger, this item increases your Luck and Morale by +1."
+	},
+	{
+		"Name": "Clover of Fortune",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Clover of Fortune increases your Luck by +1."
+	},
+	{
+		"Name": "Cards of Prophecy",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Cards of Prophecy increase your Luck by +1."
+	},
+	{
+		"Name": "Ladybird of Luck",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Ladybird of Luck increases your Luck by +1."
+	},
+	{
+		"Name": "Badge of Courage",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Badge of Courage increases your Morale by +1 and confers Mind spell immunity."
+	},
+	{
+		"Name": "Crest of Valor",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Crest of Valor increases your Morale by +1."
+	},
+	{
+		"Name": "Glyph of Gallantry",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Glyph of Gallantry increases your Morale by +1."
+	},
+	{
+		"Name": "Speculum",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Speculum increases your Scouting radius by +1."
+	},
+	{
+		"Name": "Spyglass",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "The Spyglass increases your Scouting radius by +1."
+	},
+	{
+		"Name": "Amulet of the Undertaker",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, this amulet increases your Necromancy skill by 5%."
+	},
+	{
+		"Name": "Vampire's Cowl",
+		"Type": "Cape",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, this cowl increases your Necromancy skill by 10%."
+	},
+	{
+		"Name": "Dead Man's Boots",
+		"Type": "Boots",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the feet, these boots increase your Necromancy skill by 15%."
+	},
+	{
+		"Name": "Garniture of Interference",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, this item increases your Magic Resistance by 5%."
+	},
+	{
+		"Name": "Surcoat of Counterpoise",
+		"Type": "Cape",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, this item increases your Magic Resistance by 10%."
+	},
+	{
+		"Name": "Boots of Polarity",
+		"Type": "Boots",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the feet, these boots increase your Magic Resistance by 15%."
+	},
+	{
+		"Name": "Bow of Elven Cherrywood",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This bow increases your Archery skill by 5%."
+	},
+	{
+		"Name": "Bowstring of the Unicorn's Mane",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This bowstring increases your Archery skill by 10%."
+	},
+	{
+		"Name": "Angel Feather Arrows",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "These arrows increase your Archery skill by 15%."
+	},
+	{
+		"Name": "Bird of Perception",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This figurine increases your eagle eye skill by 5%."
+	},
+	{
+		"Name": "Stoic Watchman",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This figurine increases your eagle eye skill by 10%."
+	},
+	{
+		"Name": "Emblem of Cognizance",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item increases your eagle eye skill by 15%."
+	},
+	{
+		"Name": "Statesman's Medal",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, the Statesman's Medal reduces the cost of surrendering."
+	},
+	{
+		"Name": "Diplomat's Ring",
+		"Type": "Ring",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the finger, the Diplomat's Ring reduces the cost of surrendering."
+	},
+	{
+		"Name": "Ambassador's Sash",
+		"Type": "Cape",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, the Ambassador's Sash reduces the cost of surrendering."
+	},
+	{
+		"Name": "Ring of the Wayfarer",
+		"Type": "Ring",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When placed on the finger, this ring increases the combat speed of all your units by +1."
+	},
+	{
+		"Name": "Equestrian's Gloves",
+		"Type": "Ring",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the hands, these gloves increase your hero's movement rate over land."
 	}
 ]
