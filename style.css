@@ -35,13 +35,18 @@ body {
 	margin-right: 5px;
 	list-style-type: none;
 }
-#itemStats li {
+#sidePanel #itemStats li {
 	list-style-type: none;
-	float: left;
+	margin-top: 5px;
 	display: block;
-	margin-right: 5px;
 }
 #sidePanel p {
-	clear: both;
-	margin-top: 40px;
+	margin-top: 25px;
+}
+#itemName {
+	text-align: center;
+	height: 70px;
+}
+.border {
+	border-bottom: 1px solid #423D3B;
 }

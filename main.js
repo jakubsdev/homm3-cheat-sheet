@@ -69,29 +69,6 @@ function artifacts(){
 		item.style.backgroundPosition = x + "px" + " " + y + "px";
 		artifactsGrid.appendChild(item);
 		x -= 49;
-		
-		
-		a = document.getElementById(i);
-        (function(a) {
-            a.addEventListener('mouseover', function(){
-				itemName.innerHTML = items[a.id].Name;
-				itemAtk.innerHTML = items[a.id].Attack;
-				itemDef.innerHTML = items[a.id].Defense;
-				itemPwr.innerHTML = items[a.id].Power;
-				itemKnwl.innerHTML = items[a.id].Knowledge;
-				itemEffect.innerHTML = items[a.id].Effect;
-            });
-			a.addEventListener('mouseout', function(){
-				itemName.innerHTML = "";
-				itemAtk.innerHTML = "";
-				itemDef.innerHTML = "";
-				itemPwr.innerHTML = "";
-				itemKnwl.innerHTML = "";
-				itemEffect.innerHTML = "";
-			});
-			
-        })(a); 
-		
 		if(i == 29){
 			x = -6;
 			y = -498;
@@ -105,38 +82,31 @@ function artifacts(){
 			y = -614;
 		}
 		
-/*		a = document.getElementById('artifact'+i);
-        (function (a) {
+		a = document.getElementById(i);
+        (function(a) {
             a.addEventListener('mouseover', function(){
-				var name = "";
-				var rarity = "";
-				var atk = "";
-				var def = "";
-				var pwr = "";
-				var knwl = "";
-				var desc = "";				
-                switch(a.id){
-
-    break;
+				itemName.innerHTML = items[a.id].Name;
+				itemName.classList.add("border");
+				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
+					itemAtk.innerHTML = "Attack: " + items[a.id].Attack;
+					itemDef.innerHTML = "Defense: " + items[a.id].Defense;
+					itemPwr.innerHTML = "Power: " + items[a.id].Power;
+					itemKnwl.innerHTML = "Knowledge: " + items[a.id].Knowledge;
 				}
-				itemName.innerHTML = name;
-				itemRarity.innerHTML = "Rarity: " + rarity;
-				itemAtk.innerHTML = "A: " + atk;
-				itemDef.innerHTML = "D: " + def;
-				itemPwr.innerHTML = "P: " + pwr;
-				itemKnwl.innerHTML = "K: " + knwl;
-				itemEffect.innerHTML = desc;
+				if(items[a.id].Effect != ""){
+					itemEffect.innerHTML = "Effect: " + items[a.id].Effect;
+				}
             });
 			a.addEventListener('mouseout', function(){
 				itemName.innerHTML = "";
-				itemRarity.innerHTML = "";
+				itemName.classList.remove("border");
 				itemAtk.innerHTML = "";
 				itemDef.innerHTML = "";
 				itemPwr.innerHTML = "";
 				itemKnwl.innerHTML = "";
 				itemEffect.innerHTML = "";
 			});
-        })(a); */
+        })(a); 		
 	}	
 }
 artifacts();
