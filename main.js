@@ -1,4 +1,4 @@
-artifactsGrid = document.getElementById("artifactsGrid");
+itemsGrid = document.getElementById("itemsGrid");
 
 searchBar = document.getElementById("searchBar");
 
@@ -7,6 +7,37 @@ selRarity.addEventListener("change", search);
 selType = document.getElementById("selType");
 selType.addEventListener("change", search);
 
+listToggle = document.getElementById("listToggle");
+listToggle.checked = true
+
+var artifacts = document.getElementsByClassName("item");
+var spells = document.getElementsByClassName("spell");
+
+function clear(e){
+	while(e[0]){
+		e[0].parentNode.removeChild(e[0]);
+	}
+}
+
+if(listToggle.checked === true){
+	spellsGrid();
+} else {
+	artifactsGrid();
+}
+
+listToggle.addEventListener("click",function(){
+	if(listToggle.checked === true){
+		console.log("checked");
+		clear(artifacts);
+		spellsGrid();
+	}
+	else if(listToggle.checked === false){
+		console.log("unchecked");
+		clear(spells);
+		artifactsGrid();
+	}
+});
+	
 
 iName = document.getElementById("itemName");
 iRarity = document.getElementById("itemRarity");
@@ -58,16 +89,17 @@ function search(){
 }
 			
 searchBar.addEventListener("keyup", search);
-var x = -104;
-var y = -438;
 
-function artifacts(){
+
+function artifactsGrid(){
+		var x = -104;
+		var y = -438;
 	for(var i = 0; i < 64; i++){
 		item = document.createElement('li');
 		item.className = "item";
 		item.id = i;
 		item.style.backgroundPosition = x + "px" + " " + y + "px";
-		artifactsGrid.appendChild(item);
+		itemsGrid.appendChild(item);
 		x -= 49;
 		if(i == 29){
 			x = -6;
@@ -109,4 +141,66 @@ function artifacts(){
         })(a); 		
 	}	
 }
-artifacts();
+
+function spellsGrid(){
+		var x = -20;
+		var y = 505;
+	for(var i = 0; i < 70; i++){
+		item = document.createElement('li');
+		item.className = "spell";
+		item.id = i;
+		item.style.backgroundPosition = x + "px" + " " + y + "px";
+		itemsGrid.appendChild(item);
+		x -= 83;
+		if(i == 10){
+			x = -20;
+			y = 440;
+		}
+		else if(i == 21){
+			x = -20;
+			y = 375;
+		}
+		else if(i == 32){
+			x = -20;
+			y = 310;
+		}
+		else if(i == 43){
+			x = -20;
+			y = 245;
+		}
+		else if(i == 54){
+			x = -20;
+			y = 180;
+		}
+		else if(i == 65){
+			x = -20;
+			y = 115;
+		}
+		
+		a = document.getElementById(i);
+        (function(a) {
+            a.addEventListener('mouseover', function(){
+				itemName.innerHTML = items[a.id].Name;
+				itemName.classList.add("border");
+				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
+					itemAtk.innerHTML = "Attack: " + items[a.id].Attack;
+					itemDef.innerHTML = "Defense: " + items[a.id].Defense;
+					itemPwr.innerHTML = "Power: " + items[a.id].Power;
+					itemKnwl.innerHTML = "Knowledge: " + items[a.id].Knowledge;
+				}
+				if(items[a.id].Effect != ""){
+					itemEffect.innerHTML = "Effect: " + items[a.id].Effect;
+				}
+            });
+			a.addEventListener('mouseout', function(){
+				itemName.innerHTML = "";
+				itemName.classList.remove("border");
+				itemAtk.innerHTML = "";
+				itemDef.innerHTML = "";
+				itemPwr.innerHTML = "";
+				itemKnwl.innerHTML = "";
+				itemEffect.innerHTML = "";
+			});
+        })(a); 		
+	}	
+}
