@@ -8,7 +8,7 @@ selType = document.getElementById("selType");
 selType.addEventListener("change", search);
 
 listToggle = document.getElementById("listToggle");
-listToggle.checked = true
+listToggle.checked = false
 
 var artifacts = document.getElementsByClassName("item");
 var spells = document.getElementsByClassName("spell");
@@ -20,19 +20,29 @@ function clear(e){
 }
 
 if(listToggle.checked === true){
+	document.getElementById("selRarity").style.display = "none";
+	document.getElementById("selType").style.display = "none";
 	spellsGrid();
 } else {
+	document.getElementById("selMagicSchool").style.display = "none";
+	document.getElementById("selSpellLevel").style.display = "none";
 	artifactsGrid();
 }
 
 listToggle.addEventListener("click",function(){
 	if(listToggle.checked === true){
-		console.log("checked");
+		document.getElementById("selRarity").style.display = "none";
+		document.getElementById("selType").style.display = "none";
+		document.getElementById("selMagicSchool").style.display = "inline-block";
+		document.getElementById("selSpellLevel").style.display = "inline-block";
 		clear(artifacts);
 		spellsGrid();
 	}
 	else if(listToggle.checked === false){
-		console.log("unchecked");
+		document.getElementById("selRarity").style.display = "inline-block";
+		document.getElementById("selType").style.display = "inline-block";
+		document.getElementById("selMagicSchool").style.display = "none";
+		document.getElementById("selSpellLevel").style.display = "none";
 		clear(spells);
 		artifactsGrid();
 	}
@@ -46,6 +56,9 @@ iDef = document.getElementById("itemDef");
 iPwr = document.getElementById("itemPwr");
 iKnwl = document.getElementById("itemKnwl");
 iEffect = document.getElementById("itemEffect");
+
+itemTypeStat = document.getElementById("itemTypeStat");
+itemRarityStat = document.getElementById("itemRarityStat");
 
 var items = [];
 
@@ -70,7 +83,7 @@ request.onload = function() {
 function search(){
 	var li = document.getElementsByTagName('li');
 	var input = searchBar.value.toUpperCase();
-	for(var j = 0; j < 64; j++){
+	for(var j = 0; j < 120; j++){
 		if(items[j].Name.toUpperCase().indexOf(input) > -1 || items[j].Effect.toUpperCase().indexOf(input) > -1){
 			document.getElementById(j).style.display = "block";
 		} 
@@ -94,7 +107,7 @@ searchBar.addEventListener("keyup", search);
 function artifactsGrid(){
 		var x = -104;
 		var y = -438;
-	for(var i = 0; i < 64; i++){
+	for(var i = 0; i < 120; i++){
 		item = document.createElement('li');
 		item.className = "item";
 		item.id = i;
@@ -118,6 +131,10 @@ function artifactsGrid(){
         (function(a) {
             a.addEventListener('mouseover', function(){
 				itemName.innerHTML = items[a.id].Name;
+				
+				itemRarityStat.innerHTML = items[a.id].Rarity;
+				itemTypeStat.innerHTML = items[a.id].Type;
+				
 				itemName.classList.add("border");
 				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
 					itemAtk.innerHTML = "Attack: " + items[a.id].Attack;
@@ -137,6 +154,9 @@ function artifactsGrid(){
 				itemPwr.innerHTML = "";
 				itemKnwl.innerHTML = "";
 				itemEffect.innerHTML = "";
+				
+				itemRarityStat.innerHTML = "";
+				itemTypeStat.innerHTML = "";
 			});
         })(a); 		
 	}	

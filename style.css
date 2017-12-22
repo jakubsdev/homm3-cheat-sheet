@@ -107,3 +107,14 @@ input:checked + .slider:before {
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 }
+#selRarity, #selType {
+	display: inline-block;
+}
+#itemTypeStat {
+	float: left;
+	color: #595350;
+}
+#itemRarityStat {
+	float: right;
+	color: #595350;
+}

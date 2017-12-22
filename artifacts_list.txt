@@ -638,5 +638,564 @@
 		"Power": "0",
 		"Knowledge": "0",
 		"Effect": "Worn on the hands, these gloves increase your hero's movement rate over land."
+	},
+	{
+		"Name": "Necklace of Ocean Guidance",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, this necklace increases your hero's movement rate at sea."
+	},
+	{
+		"Name": "Angel Wings",
+		"Type": "Cape",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, these wings allow you to fly."
+	},
+	{
+		"Name": "Charm of Mana",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This charm helps you recover 1 extra spell point per day."
+	},
+	{
+		"Name": "Talisman of Mana",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This talisman helps you recover 2 extra spell points per day."
+	},
+	{
+		"Name": "Mystic Orb of Mana",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This orb helps you recover 3 extra spell points per day."
+	},
+	{
+		"Name": "Collar of Conjuring",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, this item increases the duration of all your spells by 1."
+	},
+	{
+		"Name": "Ring of Conjuring",
+		"Type": "Ring",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on a finger, this item increases the duration of all your spells by 2."
+	},
+	{
+		"Name": "Cape of Conjuring",
+		"Type": "Cape",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, this item increases the duration of all your spells by 3."
+	},
+	{
+		"Name": "Orb of the Firmament",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This powerful orb causes your Air spells to inflict an additional 50% damage."
+	},
+	{
+		"Name": "Orb of Silt",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This powerful orb causes your Earth spells to inflict an additional 50% damage."
+	},
+	{
+		"Name": "Orb of Tempestuous Fire",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This powerful orb causes your Fire spells to inflict an additional 50% damage."
+	},
+	{
+		"Name": "Orb of Driving Rain",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This powerful orb causes your Water spells to inflict an additional 50% damage."
+	},
+	{
+		"Name": "Recanter's Cloak",
+		"Type": "Cape",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "While wearing this cloak, neither you nor your opponent will be able to cast level 3 or higher spells during combat."
+	},
+	{
+		"Name": "Spirit of Oppression",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item negates all morale bonuses during combat for both you and your opponent."
+	},
+	{
+		"Name": "Hourglass of the Evil Hour",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item negates all Luck bonuses during combat for both you and your opponent."
+	},
+	{
+		"Name": "Tome of Fire Magic",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This heavy book contains all spells in the school of Fire Magic."
+	},
+	{
+		"Name": "Tome of Air Magic",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This heavy book contains all spells in the school of Air Magic."
+	},
+	{
+		"Name": "Tome of Water Magic",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "his heavy book contains all spells in the school of Water Magic."
+	},
+	{
+		"Name": "Tome of Earth Magic",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This heavy book contains all spells in the school of Earth Magic."
+	},
+	{
+		"Name": "Boots of Levitation",
+		"Type": "Boots",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, these boots allow you to walk across water."
+	},
+	{
+		"Name": "Golden Bow",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When wielded, the Golden Bow allows your troops to shoot through any obstacle or at any range without penalty."
+	},
+	{
+		"Name": "Sphere of Permanence",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wielding this sphere renders your units immune to the Dispel spell."
+	},
+	{
+		"Name": "Orb of Vulnerability",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "During combat, this orb negates the natural magic resistance of all creatures on the battlefield."
+	},
+	{
+		"Name": "Ring of Vitality",
+		"Type": "Ring",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item increases the health of all your units by +1."
+	},
+	{
+		"Name": "Ring of Life",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item increases the health of all your units by +1."
+	},{
+		"Name": "Vial of Lifeblood",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item increases the health of all your units by +2."
+	},
+	{
+		"Name": "Necklace of Swiftness",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the neck, this necklace increases the combat speed of all your units by +1."
+	},
+	{
+		"Name": "Boots of Speed",
+		"Type": "Boots",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn on the feet, these boots increase your hero's movement rate over land."
+	},
+	{
+		"Name": "Cape of Velocity",
+		"Type": "Cape",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Worn about the shoulders, this cape increases the combat speed of all your units by +2."
+	},
+	{
+		"Name": "Pendant of Dispassion",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Berserk spell."
+	},
+	{
+		"Name": "Pendant of Second Sight",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Blind spell."
+	},
+	{
+		"Name": "Pendant of Holiness",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Curse spell."
+	},
+	{
+		"Name": "Pendant of Life",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Death Ripple spell."
+	},
+	{
+		"Name": "Pendant of Death",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Destroy Undead spell."
+	},
+	{
+		"Name": "Pendant of Free Will",
+		"Type": "Necklace",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Hypnotize spell."
+	},
+	{
+		"Name": "Pendant of Negativity",
+		"Type": "Necklace",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Lightning Bolt and Chain Lightning spells."
+	},
+	{
+		"Name": "Pendant of Total Recall",
+		"Type": "Necklace",
+		"Rarity": "Accessory",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "Wearing this item renders your units immune to the Forgetfulness spell."
+	},
+	{
+		"Name": "Pendant of Courage",
+		"Type": "Treasure",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this item bestows +3 Luck and Morale to your hero's troops."
+	},
+	{
+		"Name": "Everflowing Crystal Cloak",
+		"Type": "Cape",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this cloak increases your Crystal production by +1 per day."
+	},
+	{
+		"Name": "Ring of Infinite Gems",
+		"Type": "Ring",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this ring increases your Gem production by +1 per day."
+	},
+	{
+		"Name": "Everpouring Vial of Mercury",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, this vial increases your Mercury production by +1 per day."
+	},
+	{
+		"Name": "Inexhaustible Cart of Ore",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, this cart provides you with an additional +1 Ore per day."
+	},
+	{
+		"Name": "Eversmoking Ring of Sulfur",
+		"Type": "Ring",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this ring increases your Sulfur production by +1 per day."
+	},
+	{
+		"Name": "Inexhaustible Cart of Lumber",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, this cart provides you with an additional +1 Wood per day."
+	},
+	{
+		"Name": "Endless Sack of Gold",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, the Endless Sack of Gold increases your income by 1000 gold per day."
+	},
+	{
+		"Name": "Endless Bag of Gold",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, the Endless Bag of Gold increases your income by 750 gold per day."
+	},
+	{
+		"Name": "Endless Purse of Gold",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When equipped, the Endless Purse of Gold increases your income by 500 gold per day."
+	},
+	{
+		"Name": "Legs of Legion",
+		"Type": "Accessory",
+		"Rarity": "Treasure",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item, when equipped by a hero in a town, increases the growth of your 2nd level units (in that town) by 5 per week."
+	},
+	{
+		"Name": "Loins of Legion",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item, when equipped by a hero in a town, increases the growth of your 3rd level units (in that town) by 4 per week."
+	},
+	{
+		"Name": "Torso of Legion",
+		"Type": "Accessory",
+		"Rarity": "Minor",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item, when equipped by a hero in a town, increases the growth of your 4th level units (in that town) by 3 per week."
+	},
+	{
+		"Name": "Arms of Legion",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item, when equipped by a hero in a town, increases the growth of your 5th level units (in that town) by 2 per week."
+	},
+	{
+		"Name": "Head of Legion",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This item, when equipped by a hero in a town, increases the growth of your 6th level units (in that town) by 1 per week."
+	},
+	{
+		"Name": "Sea Captain's Hat",
+		"Type": "Helm",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this hat increases yout movement at sea, allows you to summon and destroy boats, and protects you from whirlpools."
+	},
+	{
+		"Name": "Spellbinder's Hat",
+		"Type": "Helm",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When worn, this hat allows you to cast all 5th level spells."
+	},
+	{
+		"Name": "Shackles of War",
+		"Type": "Accessory",
+		"Rarity": "Major",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "When these shackles are wielded in combat, neither you nor your opponent may retreat or surrender."
+	},
+	{
+		"Name": "Orb of Inhibition",
+		"Type": "Accessory",
+		"Rarity": "Relic",
+		"Attack": "0",
+		"Defense": "0",
+		"Power": "0",
+		"Knowledge": "0",
+		"Effect": "This powerful orb prevents all spell casting in combat."
 	}
 ]
