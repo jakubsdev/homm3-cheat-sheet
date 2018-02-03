@@ -25,8 +25,8 @@ body {
 }
 
 #menu {
-	background-color: #282524;
-	padding: 5px;
+	background-color: #1C1A19;
+	padding: 10px;
 	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
@@ -59,13 +59,21 @@ body {
 }
 
 #searchBar {
+	color: #F7F5E3;
 	display: block;
-	margin-right: 10px;
+	margin-right: 30px;
 	height: 28px;
-	background-color: #282524;
+	background-color: #1C1A19;
 	border: none;
-	border-bottom: 2px solid #F7F5E3;
+	font-size: 15px;
 	outline: 0;
+	caret-color: #F7F5E3;
+	border-bottom: 2px solid #3A3634;
+	transition: .25s;
+}
+
+#searchBar:focus, #searchBar:hover {
+	border-bottom: 2px solid #756C69;
 }
 
 .switch {
@@ -86,7 +94,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #3A3634;
 	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 28px;
@@ -100,26 +108,28 @@ body {
 	left: 4px;
 	bottom: 4px;
 	border-radius: 20px;
-	background-color: white;
+	background-color: #F7F5E3;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
 
 input:checked + .slider {
-	background-color: #2196F3;
-}
-
-input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	background-color: #756C69;
 }
 
 input:checked + .slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 }
-#selRarity, #selType {
-	display: inline-block;
+
+#switchState {
+	margin-left: 20px;
+	color: #CCCABB;
+}
+
+#switchState::before {
+	content: "Showing: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
 }
 
 #item {

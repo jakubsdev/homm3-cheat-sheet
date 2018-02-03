@@ -1,53 +1,15 @@
-itemsGrid = document.getElementById("itemsGrid");
-
-searchBar = document.getElementById("searchBar");
-
-itemPanel = document.getElementById("item");
-
-listToggle = document.getElementById("listToggle");
-listToggle.checked = false;
-
+var itemsGrid = document.getElementById("itemsGrid");
+var searchBar = document.getElementById("searchBar");
+var itemPanel = document.getElementById("item");
+var listToggle = document.getElementById("listToggle");
 var artifacts = document.getElementsByClassName("artifact");
 var spells = document.getElementsByClassName("spell");
+var switchState = document.getElementById("switchState");
+var toggle;
+var searchIndex = 0;
 
-function clear(e){
-	while(e[0]){
-		e[0].parentNode.removeChild(e[0]);
-	}
-}
-
-if(listToggle.checked === true){
-	spellsGrid();
-} else {
-	artifactsGrid();
-}
-
-listToggle.addEventListener("click",function(){
-	if(listToggle.checked === true){
-		clear(artifacts);
-		spellsGrid();
-	}
-	else if(listToggle.checked === false){
-		clear(spells);
-		artifactsGrid();
-	}
-});
-	
-
-iName = document.getElementById("itemName");
-iRarity = document.getElementById("itemRarity");
-iAtk = document.getElementById("itemAtk");
-iDef = document.getElementById("itemDef");
-iPwr = document.getElementById("itemPwr");
-iKnwl = document.getElementById("itemKnwl");
-iEffect = document.getElementById("itemEffect");
-
-itemTypeStat = document.getElementById("itemTypeStat");
-itemRarityStat = document.getElementById("itemRarityStat");
-
-var items = [];
-var spellsInfo = [];
-
+var artifactsList = [];
+var spellsList = [];
 
 function makeRequest(file, array){
 	var requestFile = file;
@@ -63,46 +25,48 @@ function makeRequest(file, array){
 		}
 	}
 }
-makeRequest("artifacts_list.json", items);
-makeRequest("spells_list.json", spellsInfo);
+makeRequest("artifacts_list.json", artifactsList);
+makeRequest("spells_list.json", spellsList);
 
+(toggle = function() {
+	if(listToggle.checked === true){
+		switchState.innerHTML = "Spells"
+		searchIndex = 70;
+		clear(artifacts);
+		spellsGrid();
+	}
+	else if(listToggle.checked === false){
+		switchState.innerHTML = "Artifacts"
+		searchIndex = 120;
+		clear(spells);
+		artifactsGrid();
+	}
+})();
 
+listToggle.addEventListener("click", toggle);
 
+function clear(e){
+	while(e[0]){
+		e[0].parentNode.removeChild(e[0]);
+	}
+}
 
 function search(){
 	var li = document.getElementsByTagName('li');
 	var input = searchBar.value.toUpperCase();
-	for(var j = 0; j < 120; j++){
-		if(items[j].Name.toUpperCase().indexOf(input) > -1 || items[j].Effect.toUpperCase().indexOf(input) > -1){
-			document.getElementById(j).style.display = "block";
+	for(var i = 0; i < searchIndex; i++){
+		if(artifactsList[i].Name.toUpperCase().indexOf(input) > -1 || artifactsList[i].Effect.toUpperCase().indexOf(input) > -1){
+			document.getElementById(i).style.display = "block";
 		} 
 		else {
-			document.getElementById(j).style.display = "none";
-		}
-		
-		if(selRarity.value != "Default" && selRarity.value != items[j].Rarity){
-			document.getElementById(j).style.display = "none";
-		}
-		
-		if(selType.value != "Default" && selType.value != items[j].Type){
-			document.getElementById(j).style.display = "none";
-		}
-		
-		if(selSpellLevel.value != "Default" && selSpellLevel.value != spellsInfo[j].Level){
-			document.getElementById(j).style.display = "none";
-		}
-		
-		if(selSpellClass.value != "Default" && selSpellClass.value != spellsInfo[j].Class){
-			document.getElementById(j).style.display = "none";
+			document.getElementById(i).style.display = "none";
 		}
 	}
 }
-			
+
 searchBar.addEventListener("keyup", search);
 
-
 function artifactsGrid(){
-	
 	var x = -104;
 	var y = -438;
 	for(var i = 0; i < 120; i++){
@@ -133,46 +97,46 @@ function artifactsGrid(){
             a.addEventListener('mouseover', function(){
 				
 				var displayName = document.createElement("h2");
-				displayName.innerHTML = items[a.id].Name;
+				displayName.innerHTML = artifactsList[a.id].Name;
 				itemPanel.appendChild(displayName);
 				displayName.classList.add("displayName");
 				
-				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
+				if(artifactsList[a.id].Attack != "0" || artifactsList[a.id].Defense != "0" || artifactsList[a.id].Power != "0" || artifactsList[a.id].Knowledge != "0"){
 					var displayAttack = document.createElement("p");
-					displayAttack.innerHTML = items[a.id].Attack;
+					displayAttack.innerHTML = artifactsList[a.id].Attack;
 					itemPanel.appendChild(displayAttack);
 					displayAttack.classList.add("displayAttack");
 					
 					var displayDefense = document.createElement("p");
-					displayDefense.innerHTML = items[a.id].Defense;
+					displayDefense.innerHTML = artifactsList[a.id].Defense;
 					itemPanel.appendChild(displayDefense);
 					displayDefense.classList.add("displayDefense");
 					
 					var displayPower = document.createElement("p");
-					displayPower.innerHTML = items[a.id].Power;
+					displayPower.innerHTML = artifactsList[a.id].Power;
 					itemPanel.appendChild(displayPower);
 					displayPower.classList.add("displayPower");
 					
 					var displayKnowledge = document.createElement("p");
-					displayKnowledge.innerHTML = items[a.id].Knowledge;
+					displayKnowledge.innerHTML = artifactsList[a.id].Knowledge;
 					itemPanel.appendChild(displayKnowledge);
 					displayKnowledge.classList.add("displayKnowledge");
 				}
 				
-				if(items[a.id].Effect != ""){
+				if(artifactsList[a.id].Effect != ""){
 					var displayEffect = document.createElement("p");
-					displayEffect.innerHTML = items[a.id].Effect;
+					displayEffect.innerHTML = artifactsList[a.id].Effect;
 					itemPanel.appendChild(displayEffect);
 					displayEffect.classList.add("displayEffect");
 				} 
 				
 				var displayRarity = document.createElement("p");
-				displayRarity.innerHTML = items[a.id].Rarity;
+				displayRarity.innerHTML = artifactsList[a.id].Rarity;
 				itemPanel.appendChild(displayRarity);
 				displayRarity.classList.add("displayRarity");
 				
 				var displayType = document.createElement("p");
-				displayType.innerHTML = items[a.id].Type;
+				displayType.innerHTML = artifactsList[a.id].Type;
 				itemPanel.appendChild(displayType);
 				displayType.classList.add("displayType");
             });
@@ -187,7 +151,6 @@ function artifactsGrid(){
 }
 
 function spellsGrid(){
-	
 	var x = -20;
 	var y = 505;
 	for(var i = 0; i < 70; i++){
@@ -230,22 +193,22 @@ function spellsGrid(){
             a.addEventListener('mouseover', function(){
 				
 				var displayName = document.createElement("h2");
-				displayName.innerHTML = spellsInfo[a.id].Name;
+				displayName.innerHTML = spellsList[a.id].Name;
 				itemPanel.appendChild(displayName);
 				displayName.classList.add("displayName");
 				
 				var displayLevel = document.createElement("p");
-				displayLevel.innerHTML = spellsInfo[a.id].Level;
+				displayLevel.innerHTML = spellsList[a.id].Level;
 				itemPanel.appendChild(displayLevel);
 				displayLevel.classList.add("displayLevel");
 				
 				var displayClass = document.createElement("p");
-				displayClass.innerHTML = spellsInfo[a.id].Class;
+				displayClass.innerHTML = spellsList[a.id].Class;
 				itemPanel.appendChild(displayClass);
 				displayClass.classList.add("displayClass");
 				
 				var displayEffect = document.createElement("p");
-				displayEffect.innerHTML = spellsInfo[a.id].Effect;
+				displayEffect.innerHTML = spellsList[a.id].Effect;
 				itemPanel.appendChild(displayEffect);
 				displayEffect.classList.add("displayEffect");
 			});
