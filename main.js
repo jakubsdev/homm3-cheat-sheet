@@ -5,7 +5,7 @@ searchBar = document.getElementById("searchBar");
 itemPanel = document.getElementById("item");
 
 listToggle = document.getElementById("listToggle");
-listToggle.checked = true
+listToggle.checked = false;
 
 var artifacts = document.getElementsByClassName("artifact");
 var spells = document.getElementsByClassName("spell");

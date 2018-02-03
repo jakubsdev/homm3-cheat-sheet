@@ -24,6 +24,14 @@ body {
 	padding: 15px;
 }
 
+#menu {
+	background-color: #282524;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+}
+
 #sidePanel {
 	background-color: #1C1A19;
 	width: 400px;
@@ -37,7 +45,6 @@ body {
 	width: 48px;
 	height: 58px;
 	float: left;
-	margin-left: 5px;
 	margin-right: 5px;
 	list-style-type: none;
 }
@@ -47,16 +54,25 @@ body {
 	width: 80px;
 	height: 60px;
 	float: left;
-	margin-left: 5px;
 	margin-right: 5px;
 	list-style-type: none;
+}
+
+#searchBar {
+	display: block;
+	margin-right: 10px;
+	height: 28px;
+	background-color: #282524;
+	border: none;
+	border-bottom: 2px solid #F7F5E3;
+	outline: 0;
 }
 
 .switch {
 	position: relative;
 	display: inline-block;
-	width: 60px;
-	height: 34px;
+	width: 54px;
+	height: 28px;
 }
 
 .switch input {
@@ -73,15 +89,17 @@ body {
 	background-color: #ccc;
 	-webkit-transition: .4s;
 	transition: .4s;
+	border-radius: 28px;
 }
 
 .slider:before {
 	position: absolute;
 	content: "";
-	height: 26px;
-	width: 26px;
+	height: 20px;
+	width: 20px;
 	left: 4px;
 	bottom: 4px;
+	border-radius: 20px;
 	background-color: white;
 	-webkit-transition: .4s;
 	transition: .4s;
