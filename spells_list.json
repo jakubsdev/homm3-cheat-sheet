@@ -1,0 +1,422 @@
+[
+	{
+		"Name": "Summon Boat",
+		"Level": "1",
+		"Class": "Water Magic",
+		"Effect": "Summons unoccupied boat to nearby body of water."
+	},
+	{
+		"Name": "Scuttle Boat",
+		"Level": "2",
+		"Class": "Water Magic",
+		"Effect": "Destroys nearby unoccupied boat."
+	},
+	{
+		"Name": "Visions",
+		"Level": "2",
+		"Class": "All Schools",
+		"Effect": "Increases information shown in scouting reports of towns, creatures and heroes."
+	},
+	{
+		"Name": "View Earth",
+		"Level": "1",
+		"Class": "Earth Magic",
+		"Effect": "Reveals location of all resources."
+	},
+	{
+		"Name": "Disguise",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Modifies the army composition scouting report visible to enemies."
+	},
+	{
+		"Name": "View Air",
+		"Level": "1",
+		"Class": "Air Magic",
+		"Effect": "Reveals location of all unclaimed artifacts."
+	},
+	{
+		"Name": "Fly",
+		"Level": "5",
+		"Class": "Air Magic",
+		"Effect": "Allows movement to visible land over all map obstacles. Cannot fly through cave walls in the underground."
+	},
+	{
+		"Name": "Water Walk",
+		"Level": "4",
+		"Class": "Water Magic",
+		"Effect": "Allows movement to visible land across bodies of water."
+	},
+	{
+		"Name": "Dimension Door",
+		"Level": "5",
+		"Class": "Air Magic",
+		"Effect": "Teleports hero to visible location."
+	},
+	{
+		"Name": "Town Portal",
+		"Level": "4",
+		"Class": "Earth Magic",
+		"Effect": "Teleports hero to closest allied, unoccupied town. Advanced: May choose any allied, unoccupied town."
+	},
+	{
+		"Name": "Quicksand",
+		"Level": "2",
+		"Class": "Earth Magic",
+		"Effect": "Places quicksand at random locations on the battlefield. Only visible to caster and creatures native to the terrain. Creatures attempting to pass through quicksand become stuck and make the location of the quicksand visible"
+	},
+	{
+		"Name": "Land Mine",
+		"Level": "3",
+		"Class": "Fire Magic",
+		"Effect": "Places landmines at random locations on the battlefield. Only visible to caster and creatures native to the terrain."
+	},
+	{
+		"Name": "Force Field",
+		"Level": "3",
+		"Class": "Earth Magic",
+		"Effect": "Places force field at specified location. Creatures cannot pass this field."
+	},
+	{
+		"Name": "Fire Wall",
+		"Level": "2",
+		"Class": "Fire Magic",
+		"Effect": "Creates wall of fire at target location that inflicts magic damage on creatures that pass through."
+	},
+	{
+		"Name": "Earthquake",
+		"Level": "3",
+		"Class": "Earth Magic",
+		"Effect": "Inflicts damage on random castle wall sections during a siege."
+	},
+	{
+		"Name": "Magic Arrow",
+		"Level": "1",
+		"Class": "All Schools",
+		"Effect": "Inflicts magic damage on a single enemy."
+	},
+	{
+		"Name": "Ice Bolt",
+		"Level": "2",
+		"Class": "Water Magic",
+		"Effect": "Inflicts magic damage on a single enemy."
+	},
+	{
+		"Name": "Lightning Bolt",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Inflicts magic damage on a single enemy."
+	},
+	{
+		"Name": "Implosion",
+		"Level": "5",
+		"Class": "Earth Magic",
+		"Effect": "Inflicts magic damage on a single enemy."
+	},
+	{
+		"Name": "Chain Lightning",
+		"Level": "4",
+		"Class": "Air Magic",
+		"Effect": "Inflicts magic damage on initial creature and reduced damage on nearby creatures."
+	},
+	{
+		"Name": "Frost Ring",
+		"Level": "3",
+		"Class": "Water Magic",
+		"Effect": "Inflicts magic damage on all creatures in area."
+	},
+	{
+		"Name": "Fireball",
+		"Level": "3",
+		"Class": "Fire Magic",
+		"Effect": "Inflicts magic damage on all creatures in area."
+	},
+	{
+		"Name": "Inferno",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Inflicts magic damage on all creatures in area."
+	},
+	{
+		"Name": "Meteor Shower",
+		"Level": "4",
+		"Class": "Earth Magic",
+		"Effect": "Inflicts magic damage on all creatures in area."
+	},
+	{
+		"Name": "Death Ripple",
+		"Level": "2",
+		"Class": "Earth Magic",
+		"Effect": "Inflicts magic damage on all living creatures."
+	},
+	{
+		"Name": "Destroy Undead",
+		"Level": "3",
+		"Class": "Air Magic",
+		"Effect": "Inflicts magic damage on all undead creatures."
+	},
+	{
+		"Name": "Armageddon",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Inflicts magic damage on all creatures on the battlefield."
+	},
+	{
+		"Name": "Shield",
+		"Level": "1",
+		"Class": "Earth Magic",
+		"Effect": "Reduces damage taken from hand-to-hand attacks. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Air Shield",
+		"Level": "3",
+		"Class": "Air Magic",
+		"Effect": "Reduces damage taken from ranged attacks."
+	},
+	{
+		"Name": "Fire Shield",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Inflicts magic damage proportional to damage taken from hand-to-hand attacks."
+	},
+	{
+		"Name": "Protection from Air",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Reduces damage taken from air spells. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Protection from Fire",
+		"Level": "1",
+		"Class": "Fire Magic",
+		"Effect": "Reduces damage taken from fire spells. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Protection from Water",
+		"Level": "1",
+		"Class": "Water Magic",
+		"Effect": "Reduces damage taken from water spells. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Protection from Earth",
+		"Level": "3",
+		"Class": "Earth Magic",
+		"Effect": "Reduces damage taken from earth spells. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Anti-Magic",
+		"Level": "3",
+		"Class": "Earth Magic",
+		"Effect": "Grants spell immunity to a single creature."
+	},
+	{
+		"Name": "Dispel",
+		"Level": "1",
+		"Class": "Water Magic",
+		"Effect": "Removes all spell effects from target allied, enemy or all creatures and the battlefield."
+	},
+	{
+		"Name": "Magic Mirror",
+		"Level": "5",
+		"Class": "Air Magic",
+		"Effect": "Reflects hostile spells to a random enemy. Basic: 20% chance of occurrence. Advanced: 30% chance. Expert: 40% chance."
+	},
+	{
+		"Name": "Cure",
+		"Level": "1",
+		"Class": "Water Magic",
+		"Effect": "Removes all negative spell effects from target (or all) allied troop and heals it."
+	},
+	{
+		"Name": "Resurrection",
+		"Level": "4",
+		"Class": "Earth Magic",
+		"Effect": "Resurrects killed living creatures until the end of combat. Advanced: Resurrected creatures are not lost when combat ends."
+	},
+	{
+		"Name": "Animate Dead",
+		"Level": "3",
+		"Class": "Earth Magic",
+		"Effect": "Reanimates killed undead creatures. Reanimated creatures are not lost when combat ends."
+	},
+	{
+		"Name": "Sacrifice",
+		"Level": "5",
+		"Class": "Fire Magic",
+		"Effect": "Destroys and removes living, unkilled allies to bring previously living, killed allies back to life."
+	},
+	{
+		"Name": "Bless",
+		"Level": "1",
+		"Class": "Water Magic",
+		"Effect": "Target (or all) allied creature inflict maximum damage (or maximum +1) when it attacks."
+	},
+	{
+		"Name": "Curse",
+		"Level": "1",
+		"Class": "Fire Magic",
+		"Effect": "The targeted (or all) enemy unit deliver minimum or reduced damage when attacking."
+	},
+	{
+		"Name": "Bloodlust",
+		"Level": "1",
+		"Class": "Fire Magic",
+		"Effect": "Increases the attack skill of target (or all) allied creature for melee attacks."
+	},
+	{
+		"Name": "Precision",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Increases ranged attack rating. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Weakness",
+		"Level": "2",
+		"Class": "Water Magic",
+		"Effect": "Reduces attack rating. Basic: Single enemy. Expert: All enemies."
+	},
+	{
+		"Name": "Stone Skin",
+		"Level": "1",
+		"Class": "Earth Magic",
+		"Effect": "Increases defense rating. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Disrupting Ray",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Reduces defense rating of a single enemy. May be used repeatedly on the same target."
+	},
+	{
+		"Name": "Prayer",
+		"Level": "4",
+		"Class": "Water Magic",
+		"Effect": "Increases attack rating, defense rating and speed. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Sorrow",
+		"Level": "4",
+		"Class": "Earth Magic",
+		"Effect": "Reduces morale. Basic: Single enemy. Expert: All enemies."
+	},
+	{
+		"Name": "Fortune",
+		"Level": "2",
+		"Class": "Air Magic",
+		"Effect": "Increases luck. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Mirth",
+		"Level": "3",
+		"Class": "Water Magic",
+		"Effect": "Increases morale. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Misfortune",
+		"Level": "3",
+		"Class": "Fire Magic",
+		"Effect": "Reduces luck. Basic: Single enemy. Expert: All enemies."
+	},
+	{
+		"Name": "Haste",
+		"Level": "1",
+		"Class": "Air Magic",
+		"Effect": "Target (or all) allied troop's speed is increased by 3 (or 5) hexes per turn."
+	},
+	{
+		"Name": "Slow",
+		"Level": "1",
+		"Class": "Earth Magic",
+		"Effect": "Decreases speed. Basic: Single enemy. Expert: All enemies."
+	},
+	{
+		"Name": "Slayer",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Increases attack rating of a single ally against Dragons, Behemoths and Hydras. Advanced: Effect applies to Angels and Devils. Expert: Effect applies to Titans."
+	},
+	{
+		"Name": "Frenzy",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Increases attack rating and sets defense rating to 0."
+	},
+	{
+		"Name": "Titan's Lightning Bolt",
+		"Level": "5",
+		"Class": "Air Magic",
+		"Effect": "Inflicts 600 magic damage on a single enemy. Requires Titan's Thunder."
+	},
+	{
+		"Name": "Counterstrike",
+		"Level": "4",
+		"Class": "Air Magic",
+		"Effect": "Allows extra retaliations per round. Basic: Single ally. Expert: All allies."
+	},
+	{
+		"Name": "Berserk",
+		"Level": "4",
+		"Class": "Fire Magic",
+		"Effect": "Forces enemy to attack closest creature."
+	},
+	{
+		"Name": "Hypnotize",
+		"Level": "3",
+		"Class": "Air Magic",
+		"Effect": "Allows control of actions taken by enemy creature."
+	},
+	{
+		"Name": "Forgetfulness",
+		"Level": "3",
+		"Class": "Water Magic",
+		"Effect": "Prevents use of ranged attacks. Basic: Single enemy. Expert: All enemies."
+	},
+	{
+		"Name": "Blind",
+		"Level": "2",
+		"Class": "Fire Magic",
+		"Effect": "Prevents any action from being taken by target enemy creature."
+	},
+	{
+		"Name": "Teleport",
+		"Level": "3",
+		"Class": "Water Magic",
+		"Effect": "Teleports ally to location on the battlefield. Expert: May teleport creature over castle walls."
+	},
+	{
+		"Name": "Remove Obstacle",
+		"Level": "2",
+		"Class": "Water Magic",
+		"Effect": "Removes obstacles from the battlefield. Basic: Only trees, rocks and other natural obstacles may be removed. Advanced: May also remove fire walls."
+	},
+	{
+		"Name": "Clone",
+		"Level": "4",
+		"Class": "Water Magic",
+		"Effect": "Creates clone of allied creature."
+	},
+	{
+		"Name": "Summon Fire Elemental",
+		"Level": "5",
+		"Class": "Fire Magic",
+		"Effect": "Summons allied Fire Elementals for the duration of combat."
+	},
+	{
+		"Name": "Summon Earth Elemental",
+		"Level": "5",
+		"Class": "Earth Magic",
+		"Effect": "Summons allied Earth Elementals for the duration of combat."
+	},
+	{
+		"Name": "Summon Water Elemental",
+		"Level": "5",
+		"Class": "Water Magic",
+		"Effect": "Summons allied Water Elementals for the duration of combat."
+	},
+	{
+		"Name": "Summon Air Elemental",
+		"Level": "5",
+		"Class": "Air Magic",
+		"Effect": "Summons allied Air Elementals for the duration of combat."
+	}
+]

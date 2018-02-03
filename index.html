@@ -10,64 +10,15 @@
 </head>
 <body>
 	<div id="sidePanel">
-		<h2 id="itemName"></h2>
-		<p id="itemRarity"></p>
-		<ul id="itemStats">
-			<li id="itemAtk"></li>
-			<li id="itemDef"></li>
-			<li id="itemPwr"></li>
-			<li id="itemKnwl"></li>
-		</ul>
-		<p id="itemEffect"></p>
-		<p id="itemTypeStat"></p>
-		<p id="itemRarityStat"></p>
+		<div id="item"></div>
 	</div>
 	<div id="mainPanel">
 		<input type="text" id="searchBar" placeholder="Search..">
-		<select id="selRarity">
-			<option value="Default">Rarity</option>
-			<option value="Treasure">Treasure</option>
-			<option value="Minor">Minor</option>
-			<option value="Major">Major</option>
-			<option value="Relic">Relic</option>
-		</select>
-		<select id="selType">
-			<option value="Default">Type</option>
-			<option value="Weapon">Weapon</option>
-			<option value="Shield">Shield</option>
-			<option value="Helm">Helm</option>
-			<option value="Necklace">Necklace</option>
-			<option value="Armor">Armor</option>
-			<option value="Boots">Boots</option>
-			<option value="Cape">Cape</option>
-			<option value="Ring">Ring</option>
-			<option value="Accessory">Accessory</option>
-		</select>
-		
-		<select id="selMagicSchool">
-			<option value="Default">School of magic</option>
-			<option value="Air">Air</option>
-			<option value="Earth">Earth</option>
-			<option value="Fire">Fire</option>
-			<option value="Water">Water</option>
-		</select>
-		<select id="selSpellLevel">
-			<option value="Default">Spell level</option>
-			<option value="Level1">Level 1</option>
-			<option value="Level2">Level 2</option>
-			<option value="Level3">Level 3</option>
-			<option value="Level4">Level 4</option>
-			<option value="Level5">Level 5</option>
-		</select>
-		Artifacts
 		<label class="switch">
 			<input type="checkbox" id="listToggle">
 			<span class="slider"></span>
 		</label>
-		Spells
-		<ul id="itemsGrid">
-		
-		</ul>
+		<ul id="itemsGrid"></ul>
 	</div>
 	<script src="main.js"></script>
 <body>

@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html, body {
 	width: 100%;
 	height: 100%;
 }
+
 body {
 	font-family: "Arvo", serif;
 	color: #F7F5E3;
 }
+
 #mainPanel {
 	background-color: #161514;
 	width: calc(100% - 400px);
@@ -19,6 +23,7 @@ body {
 	float: right;
 	padding: 15px;
 }
+
 #sidePanel {
 	background-color: #1C1A19;
 	width: 400px;
@@ -26,7 +31,8 @@ body {
 	float: left;
 	padding: 15px;
 }
-.item {
+
+.artifact {
 	background-image: url(sprites/artifacts_base.png);
 	width: 48px;
 	height: 58px;
@@ -35,6 +41,7 @@ body {
 	margin-right: 5px;
 	list-style-type: none;
 }
+
 .spell {
 	background-image: url(sprites/spells_base.png);
 	width: 80px;
@@ -44,21 +51,7 @@ body {
 	margin-right: 5px;
 	list-style-type: none;
 }
-#sidePanel #itemStats li {
-	list-style-type: none;
-	margin-top: 5px;
-	display: block;
-}
-#sidePanel p {
-	margin-top: 25px;
-}
-#itemName {
-	text-align: center;
-	height: 70px;
-}
-.border {
-	border-bottom: 1px solid #423D3B;
-}
+
 .switch {
 	position: relative;
 	display: inline-block;
@@ -110,11 +103,82 @@ input:checked + .slider:before {
 #selRarity, #selType {
 	display: inline-block;
 }
-#itemTypeStat {
-	float: left;
-	color: #595350;
+
+#item {
+	position: relative;
+	height: 300px;
+	width: 100%;
 }
-#itemRarityStat {
+
+#item p {
+	padding-bottom: 4px;
+	color: #CCCABB;
+}
+
+.displayName {
+	height: 70px;
+	border-bottom: 1px solid #423D3B;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.displayAttack::before {
+	content: "Attack: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayDefense::before {
+	content: "Defense: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayPower::before {
+	content: "Power: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayKnowledge::before {
+	content: "Knowledge: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayLevel::before {
+	content: "Level: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayClass::before {
+	content: "Class: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayEffect::before {
+	content: "Effect: ";
+	color: #F7F5E3;
+	text-shadow: 2px 2px #423D3B;
+}
+
+.displayType {
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	color: #595350!important;
+	width: 50%;
+	float: left;
+}
+
+.displayRarity {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	color: #595350!important;
+	width: 50%;
 	float: right;
-	color: #595350;
+	text-align: right;
 }

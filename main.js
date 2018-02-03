@@ -2,15 +2,12 @@ itemsGrid = document.getElementById("itemsGrid");
 
 searchBar = document.getElementById("searchBar");
 
-selRarity = document.getElementById("selRarity");
-selRarity.addEventListener("change", search);
-selType = document.getElementById("selType");
-selType.addEventListener("change", search);
+itemPanel = document.getElementById("item");
 
 listToggle = document.getElementById("listToggle");
-listToggle.checked = false
+listToggle.checked = true
 
-var artifacts = document.getElementsByClassName("item");
+var artifacts = document.getElementsByClassName("artifact");
 var spells = document.getElementsByClassName("spell");
 
 function clear(e){
@@ -20,29 +17,17 @@ function clear(e){
 }
 
 if(listToggle.checked === true){
-	document.getElementById("selRarity").style.display = "none";
-	document.getElementById("selType").style.display = "none";
 	spellsGrid();
 } else {
-	document.getElementById("selMagicSchool").style.display = "none";
-	document.getElementById("selSpellLevel").style.display = "none";
 	artifactsGrid();
 }
 
 listToggle.addEventListener("click",function(){
 	if(listToggle.checked === true){
-		document.getElementById("selRarity").style.display = "none";
-		document.getElementById("selType").style.display = "none";
-		document.getElementById("selMagicSchool").style.display = "inline-block";
-		document.getElementById("selSpellLevel").style.display = "inline-block";
 		clear(artifacts);
 		spellsGrid();
 	}
 	else if(listToggle.checked === false){
-		document.getElementById("selRarity").style.display = "inline-block";
-		document.getElementById("selType").style.display = "inline-block";
-		document.getElementById("selMagicSchool").style.display = "none";
-		document.getElementById("selSpellLevel").style.display = "none";
 		clear(spells);
 		artifactsGrid();
 	}
@@ -61,24 +46,28 @@ itemTypeStat = document.getElementById("itemTypeStat");
 itemRarityStat = document.getElementById("itemRarityStat");
 
 var items = [];
+var spellsInfo = [];
 
-function add(jsonObj){
-  for(var i = 0;i < jsonObj.length;i++){
-	  items.push(jsonObj[i]);
-  }
+
+function makeRequest(file, array){
+	var requestFile = file;
+	var request = new XMLHttpRequest();
+	request.open('GET', requestFile);
+	request.responseType = 'json';
+	request.send();
+	
+	request.onload = function() {
+		var e = request.response;
+		for(var i = 0;i < e.length;i++){
+			array.push(e[i]);
+		}
+	}
 }
+makeRequest("artifacts_list.json", items);
+makeRequest("spells_list.json", spellsInfo);
 
 
-var requestFile = "artifacts_list.txt";
-var request = new XMLHttpRequest();
-request.open('GET', requestFile);
-request.responseType = 'json';
-request.send();
 
-request.onload = function() {
-  var artifacts = request.response;
-  add(artifacts);
-}
 
 function search(){
 	var li = document.getElementsByTagName('li');
@@ -98,6 +87,14 @@ function search(){
 		if(selType.value != "Default" && selType.value != items[j].Type){
 			document.getElementById(j).style.display = "none";
 		}
+		
+		if(selSpellLevel.value != "Default" && selSpellLevel.value != spellsInfo[j].Level){
+			document.getElementById(j).style.display = "none";
+		}
+		
+		if(selSpellClass.value != "Default" && selSpellClass.value != spellsInfo[j].Class){
+			document.getElementById(j).style.display = "none";
+		}
 	}
 }
 			
@@ -105,121 +102,158 @@ searchBar.addEventListener("keyup", search);
 
 
 function artifactsGrid(){
-		var x = -104;
-		var y = -438;
+	
+	var x = -104;
+	var y = -438;
 	for(var i = 0; i < 120; i++){
-		item = document.createElement('li');
-		item.className = "item";
-		item.id = i;
-		item.style.backgroundPosition = x + "px" + " " + y + "px";
-		itemsGrid.appendChild(item);
+		artifact = document.createElement('li');
+		artifact.className = "artifact";
+		artifact.id = i;
+		artifact.style.backgroundPosition = x + "px" + " " + y + "px";
+		itemsGrid.appendChild(artifact);
+		
 		x -= 49;
-		if(i == 29){
-			x = -6;
-			y = -498;
-		}
-		else if(i == 61){
-			x = -6;
-			y = -558;
-		}
-		else if(i == 92){
-			x = -6;
-			y = -614;
+		switch(i) {
+			case 29:
+				x = -6;
+				y = -496;
+				break;
+			case 61:
+				x = -6;
+				y = -558;
+				break;
+			case 92:
+				x = -6;
+				y = -614;
+				break;
 		}
 		
 		a = document.getElementById(i);
         (function(a) {
             a.addEventListener('mouseover', function(){
-				itemName.innerHTML = items[a.id].Name;
 				
-				itemRarityStat.innerHTML = items[a.id].Rarity;
-				itemTypeStat.innerHTML = items[a.id].Type;
+				var displayName = document.createElement("h2");
+				displayName.innerHTML = items[a.id].Name;
+				itemPanel.appendChild(displayName);
+				displayName.classList.add("displayName");
 				
-				itemName.classList.add("border");
 				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
-					itemAtk.innerHTML = "Attack: " + items[a.id].Attack;
-					itemDef.innerHTML = "Defense: " + items[a.id].Defense;
-					itemPwr.innerHTML = "Power: " + items[a.id].Power;
-					itemKnwl.innerHTML = "Knowledge: " + items[a.id].Knowledge;
+					var displayAttack = document.createElement("p");
+					displayAttack.innerHTML = items[a.id].Attack;
+					itemPanel.appendChild(displayAttack);
+					displayAttack.classList.add("displayAttack");
+					
+					var displayDefense = document.createElement("p");
+					displayDefense.innerHTML = items[a.id].Defense;
+					itemPanel.appendChild(displayDefense);
+					displayDefense.classList.add("displayDefense");
+					
+					var displayPower = document.createElement("p");
+					displayPower.innerHTML = items[a.id].Power;
+					itemPanel.appendChild(displayPower);
+					displayPower.classList.add("displayPower");
+					
+					var displayKnowledge = document.createElement("p");
+					displayKnowledge.innerHTML = items[a.id].Knowledge;
+					itemPanel.appendChild(displayKnowledge);
+					displayKnowledge.classList.add("displayKnowledge");
 				}
+				
 				if(items[a.id].Effect != ""){
-					itemEffect.innerHTML = "Effect: " + items[a.id].Effect;
-				}
+					var displayEffect = document.createElement("p");
+					displayEffect.innerHTML = items[a.id].Effect;
+					itemPanel.appendChild(displayEffect);
+					displayEffect.classList.add("displayEffect");
+				} 
+				
+				var displayRarity = document.createElement("p");
+				displayRarity.innerHTML = items[a.id].Rarity;
+				itemPanel.appendChild(displayRarity);
+				displayRarity.classList.add("displayRarity");
+				
+				var displayType = document.createElement("p");
+				displayType.innerHTML = items[a.id].Type;
+				itemPanel.appendChild(displayType);
+				displayType.classList.add("displayType");
             });
 			a.addEventListener('mouseout', function(){
-				itemName.innerHTML = "";
-				itemName.classList.remove("border");
-				itemAtk.innerHTML = "";
-				itemDef.innerHTML = "";
-				itemPwr.innerHTML = "";
-				itemKnwl.innerHTML = "";
-				itemEffect.innerHTML = "";
 				
-				itemRarityStat.innerHTML = "";
-				itemTypeStat.innerHTML = "";
+				while (itemPanel.firstChild) {
+					itemPanel.removeChild(itemPanel.firstChild);
+				}
 			});
         })(a); 		
 	}	
 }
 
 function spellsGrid(){
-		var x = -20;
-		var y = 505;
+	
+	var x = -20;
+	var y = 505;
 	for(var i = 0; i < 70; i++){
-		item = document.createElement('li');
-		item.className = "spell";
-		item.id = i;
-		item.style.backgroundPosition = x + "px" + " " + y + "px";
-		itemsGrid.appendChild(item);
+		spell = document.createElement('li');
+		spell.className = "spell";
+		spell.id = i;
+		spell.style.backgroundPosition = x + "px" + " " + y + "px";
+		itemsGrid.appendChild(spell);
+		
 		x -= 83;
-		if(i == 10){
-			x = -20;
-			y = 440;
-		}
-		else if(i == 21){
-			x = -20;
-			y = 375;
-		}
-		else if(i == 32){
-			x = -20;
-			y = 310;
-		}
-		else if(i == 43){
-			x = -20;
-			y = 245;
-		}
-		else if(i == 54){
-			x = -20;
-			y = 180;
-		}
-		else if(i == 65){
-			x = -20;
-			y = 115;
+		switch(i) { 
+			case 10:
+				x = -20;
+				y = 440;
+				break;
+			case 21:
+				x = -20;
+				y = 375;
+				break;
+			case 32:
+				x = -20;
+				y = 310;
+				break;
+			case 43:
+				x = -20;
+				y = 245;
+				break;
+			case 54:
+				x = -20;
+				y = 180;
+				break;
+			case 65:
+				x = -20;
+				y = 115;
+				break;
 		}
 		
 		a = document.getElementById(i);
         (function(a) {
             a.addEventListener('mouseover', function(){
-				itemName.innerHTML = items[a.id].Name;
-				itemName.classList.add("border");
-				if(items[a.id].Attack != "0" || items[a.id].Defense != "0" || items[a.id].Power != "0" || items[a.id].Knowledge != "0"){
-					itemAtk.innerHTML = "Attack: " + items[a.id].Attack;
-					itemDef.innerHTML = "Defense: " + items[a.id].Defense;
-					itemPwr.innerHTML = "Power: " + items[a.id].Power;
-					itemKnwl.innerHTML = "Knowledge: " + items[a.id].Knowledge;
-				}
-				if(items[a.id].Effect != ""){
-					itemEffect.innerHTML = "Effect: " + items[a.id].Effect;
-				}
-            });
+				
+				var displayName = document.createElement("h2");
+				displayName.innerHTML = spellsInfo[a.id].Name;
+				itemPanel.appendChild(displayName);
+				displayName.classList.add("displayName");
+				
+				var displayLevel = document.createElement("p");
+				displayLevel.innerHTML = spellsInfo[a.id].Level;
+				itemPanel.appendChild(displayLevel);
+				displayLevel.classList.add("displayLevel");
+				
+				var displayClass = document.createElement("p");
+				displayClass.innerHTML = spellsInfo[a.id].Class;
+				itemPanel.appendChild(displayClass);
+				displayClass.classList.add("displayClass");
+				
+				var displayEffect = document.createElement("p");
+				displayEffect.innerHTML = spellsInfo[a.id].Effect;
+				itemPanel.appendChild(displayEffect);
+				displayEffect.classList.add("displayEffect");
+			});
 			a.addEventListener('mouseout', function(){
-				itemName.innerHTML = "";
-				itemName.classList.remove("border");
-				itemAtk.innerHTML = "";
-				itemDef.innerHTML = "";
-				itemPwr.innerHTML = "";
-				itemKnwl.innerHTML = "";
-				itemEffect.innerHTML = "";
+				
+				while (itemPanel.firstChild) {
+					itemPanel.removeChild(itemPanel.firstChild);
+				}
 			});
         })(a); 		
 	}	

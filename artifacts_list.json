@@ -817,7 +817,7 @@
 		"Defense": "0",
 		"Power": "0",
 		"Knowledge": "0",
-		"Effect": "his heavy book contains all spells in the school of Water Magic."
+		"Effect": "This heavy book contains all spells in the school of Water Magic."
 	},
 	{
 		"Name": "Tome of Earth Magic",
@@ -1166,7 +1166,7 @@
 		"Defense": "0",
 		"Power": "0",
 		"Knowledge": "0",
-		"Effect": "When worn, this hat increases yout movement at sea, allows you to summon and destroy boats, and protects you from whirlpools."
+		"Effect": "When worn, this hat increases your movement at sea, allows you to summon and destroy boats, and protects you from whirlpools."
 	},
 	{
 		"Name": "Spellbinder's Hat",
