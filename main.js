@@ -54,8 +54,15 @@ function clear(e){
 function search(){
 	var li = document.getElementsByTagName('li');
 	var input = searchBar.value.toUpperCase();
+	var x;
+	if(listToggle.checked === true) {
+		x = spellsList;	
+	}
+	else {
+		x = artifactsList;
+	}
 	for(var i = 0; i < searchIndex; i++){
-		if(artifactsList[i].Name.toUpperCase().indexOf(input) > -1 || artifactsList[i].Effect.toUpperCase().indexOf(input) > -1){
+		if(x[i].Name.toUpperCase().indexOf(input) > -1 || x[i].Effect.toUpperCase().indexOf(input) > -1){
 			document.getElementById(i).style.display = "block";
 		} 
 		else {
